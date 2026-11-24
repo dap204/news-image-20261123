@@ -16,7 +16,7 @@ what happened from the picture alone.
 
 - `draw.py` draws the front page with Python + Pillow (system DejaVu fonts,
   no network, no external assets) and writes `entry.png`
-  (1024 × 1024 PNG, ~141 KB). Every text block is auto-fitted with Pillow's
+  (1024 × 1024 PNG, ~147 KB). Every text block is auto-fitted with Pillow's
   own text measurement, so headlines can shrink but never overflow or
   collide. Running it twice produces byte-identical output.
 - The drawn PNG is carried in the repository as `entry.b64` — its exact
@@ -37,31 +37,38 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 All stories happened, or were first reported, on 22–23 November 2026 and were
 cross-checked on the morning of Monday 23 November (WITA) against at least
-two independent outlets each:
+two independent outlets each, then re-checked with final figures on the
+evening of Tuesday 24 November (WITA) — this is the v2 refresh, which corrects
+the Dymer toll, the Gulf panel and the FIFA confirmation, and swaps the
+weakest panel (Liverpool 4–0 United) for the day's biggest market story,
+Nvidia's CEO comeback:
 
 1. **Lead — COP31 climate talks collapse with no deal.** The UN climate
    conference in Antalya, Türkiye ended without adopting the "Antalya Pact"
    after the EU and allies rejected a text that never mentions fossil fuels;
-   the first COP breakdown since Copenhagen 2009. (CNN, Le Monde, WSJ,
-   phys.org/AP, Fox Business)
-2. **Sea drones sink Russian warship.** Suspected Ukrainian sea drones sank
-   the Russian corvette *Merkury* at Benghazi naval base, Libya; a Russian
-   cargo ship was also ablaze in the Baltic. (AP, Reuters, The Times,
-   Fox News, TWZ)
+   the longest COP ever, and the first COP breakdown since Copenhagen 2009.
+   (CNN, Le Monde, WSJ, phys.org/AP, Fox Business)
+2. **Sea drones sink Russian warship.** Seven Ukrainian sea drones sank the
+   Russian corvette *Merkury* at Benghazi naval base, Libya, destroying a
+   Ka-27 helicopter on board; the cargo ship *Angara* was hit as well.
+   (CNN, AP, Reuters, The Times, Fox News, TWZ)
 3. **Search in the rubble near Kyiv.** A Russian drone strike collapsed a
-   five-storey block of flats in Dymer, Kyiv region; rescuers searched for
-   the missing as the regional toll passed 11 dead. (Reuters, AFP/Arab News,
-   BBC)
-4. **Iran strike wounds two in Bahrain.** Bahrain reported two wounded in an
-   Iranian strike on an industrial site; the Houthis claimed an attack on
-   Saudi Arabia's Rabigh oil refinery as Saudi air defences intercepted
-   missiles and drones. (AFP, The News International, CNBC Indonesia)
-5. **Liverpool rout ten-man United 4–0.** Leny Yoro was sent off after eight
-   minutes at Anfield as Liverpool thrashed Manchester United in Mauricio
-   Pochettino's first match in charge. (Reuters, The Times)
-6. **UK to host 2035 Women's World Cup.** FIFA was set to confirm the sole
-   UK bid on Monday — a first World Cup in the UK since 1966. (Briefly,
-   Daily Fox News, News Central TV)
+   five-storey block of flats in Dymer, Kyiv region; the rescue operation
+   ended on Monday evening with 11 dead, while a boy of seven and a woman
+   of 79 were pulled alive from the rubble. (Reuters, AFP/Arab News, BBC,
+   Kyiv Post)
+4. **Houthis claim hit on Saudi refinery.** The Houthis said they struck
+   the Petro Rabigh oil refinery on Saudi Arabia's Red Sea coast and claimed
+   a direct hit; Riyadh stayed silent, and no damage was independently
+   confirmed. (Reuters, TBS News, Yemen Monitor)
+5. **Huang back at Nvidia; shares soar 31%.** Nvidia's board reinstated
+   Jensen Huang as CEO days after his exit; the stock jumped 31% in a day,
+   adding nearly $1 trillion in market value. (CNN, Le Monde, The Times,
+   USA Today)
+6. **UK to host 2035 Women's World Cup.** FIFA confirmed the UK bid —
+   England, Northern Ireland, Scotland and Wales — at an Extraordinary
+   Congress on Monday, a first World Cup in the UK since 1966. (FIFA,
+   Reuters, BBC, The Times)
 7. **Also today.** Carlos Alcaraz won his first ATP Finals title, beating
    world No. 1 Alexander Zverev in Turin (ATP Tour, Reuters); Jeeno Thitikul
    won the LPGA's CME Group Tour Championship for a third straight year and

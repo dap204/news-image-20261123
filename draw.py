@@ -120,7 +120,8 @@ for line in ("COP31 CLIMATE TALKS", "COLLAPSE — NO DEAL"):
     ly += int(lead_f.size * 1.12)
 lead_sub = ("The UN summit ends in deadlock as the EU and its allies "
             "reject a final pact that never mentions fossil fuels — the "
-            "first climate breakdown since Copenhagen in 2009.")
+            "longest COP ever, and the first climate breakdown since "
+            "Copenhagen in 2009.")
 sub_f = fit_lines(d, lead_sub, SANS, 27, 620, 3)
 draw_lines(d, (M, ly + 12), lead_sub, sub_f, BODY, 620, leading=1.28)
 
@@ -168,20 +169,20 @@ def panel(x, y, w, label, color, headline, sub):
 CW = 452
 panel(M, 552, CW, "WAR AT SEA  •  LIBYA", BLUE,
       "SEA DRONES SINK RUSSIAN WARSHIP",
-      "Ukrainian sea drones sink the corvette Merkury at Benghazi; a "
-      "cargo ship is ablaze in the Baltic.")
+      "Seven Ukrainian sea drones sink the corvette Merkury at Benghazi; "
+      "the cargo ship Angara is hit as well.")
 panel(532, 552, CW, "UKRAINE  •  DYMER, KYIV REGION", TEAL,
       "SEARCH IN THE RUBBLE NEAR KYIV",
-      "Rescuers comb a collapsed block of flats in Dymer; at least 11 "
-      "dead, and the missing are still sought.")
-panel(M, 720, CW, "GULF  •  BAHRAIN & SAUDI ARABIA", ORANGE,
-      "IRAN STRIKE WOUNDS TWO IN BAHRAIN",
-      "The Houthis claim a strike on a Saudi oil refinery as missiles "
-      "and drones fly across the Gulf.")
-panel(532, 720, CW, "FOOTBALL  •  ANFIELD", GREEN,
-      "LIVERPOOL ROUT TEN-MAN UNITED 4–0",
-      "A nightmare debut for United boss Pochettino: Yoro was sent off "
-      "inside eight minutes at Anfield.")
+      "Rescue ends with 11 dead in Dymer; a boy of seven and a woman of "
+      "79 are pulled alive from the rubble.")
+panel(M, 720, CW, "GULF  •  SAUDI ARABIA", ORANGE,
+      "HOUTHIS CLAIM HIT ON SAUDI REFINERY",
+      "The Houthis claim a direct hit on the Petro Rabigh refinery; "
+      "Riyadh stays silent.")
+panel(532, 720, CW, "MARKETS  •  WALL STREET", GREEN,
+      "HUANG BACK AT NVIDIA; SHARES SOAR 31%",
+      "The board reinstates Jensen Huang as CEO days after his exit; "
+      "shares jump 31%.")
 
 # ---------------------------------------------------------------- wide panel
 WY = 894
@@ -190,7 +191,7 @@ tag_end = kicker(d, (M, WY), "FOOTBALL  •  FIFA", PURPLE)
 wide_head = "UK TO HOST 2035 WOMEN'S WORLD CUP"
 wf = fit_one(d, wide_head, SERIF_B, 31, RIGHT - (tag_end + 24))
 d.text((tag_end + 24, WY + 1), wide_head, font=wf, fill=INK)
-wide_sub = ("FIFA to confirm the sole UK bid on Monday — the first World "
+wide_sub = ("FIFA confirms the UK bid on Monday — the first World "
             "Cup in the UK since 1966.")
 wsf = fit_one(d, wide_sub, SANS, 22, 944)
 d.text((M, WY + 46), wide_sub, font=wsf, fill=BODY)
